@@ -7,7 +7,8 @@ route.post('/createpost', requireLogin, (req, res) => {
     if (!title || !body) {
         return res.status(422).json({ error: "Please enter the title and body" })
     }
-    console.log(req.user)
+
+    res.json(req.user)
     // const post = new Post({
     //     title,
     //     body,

@@ -29,6 +29,7 @@ route.post('/signup', (req, res) => {
         }).catch((err) => { console.log(err) })
     }).catch(err => console.log(err))
 })
+
 route.post('/login', (req, res) => {
     const { email, password } = req.body
     if (!email || !password) {
