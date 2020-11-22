@@ -5,6 +5,7 @@ import Home from "./components/routes/Home";
 import Login from "./components/routes/Login";
 import Profile from "./components/routes/Profile";
 import Signup from "./components/routes/Signup";
+import CreatePost from "./components/routes/CreatePost";
 import "./App.css";
 class App extends Component {
   render() {
@@ -22,6 +23,9 @@ class App extends Component {
         </Route>
         <Route path = '/profile'>
           <Profile/>
+        </Route>
+        <Route path = '/create'>
+          <CreatePost/>
         </Route>
       </BrowserRouter>
     );
